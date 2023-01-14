@@ -400,4 +400,4 @@ def OperationOnDF(data, prediction1, forecast_out, type=False):
         conscensus = conscensus.reset_index()
         conscensus2 = []
 
-    return somme1, conscensus, 
+    return somme1, conscensus, conscensus2
