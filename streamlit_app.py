@@ -204,7 +204,7 @@ if len(ticker) != 0:  # si l'utilisateur entre une série de ticker alors l'inte
 
             with col2:
                 st.write("##### Notre prédiction :")
-                st.write(conscensus.tail(forecast_out + 1).style.background_gradient())
+                st.write(conscensus.tail(forecast_out + 1).style.background_gradient(axis=None))
 
             st.write("##### Notre prédiction sur les {} prochaines minutes".format(2 * forecast_out))
 
