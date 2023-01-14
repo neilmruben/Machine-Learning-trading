@@ -376,7 +376,7 @@ def OperationOnDF(data, prediction1, forecast_out, type=False):
         conscensus.index = pd.to_datetime(conscensus.index)
         conscensus.index = conscensus.index+ pd.DateOffset(hours=1)
         conscensus = conscensus.reset_index()
-        conscensus
+        
         
         
         conscensus2 = prediction.median(axis=1)
