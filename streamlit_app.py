@@ -112,7 +112,7 @@ st.image(image)
 
 st.write(
     '#### Entrez le ticker comme ceci : AAPL, TSLA, AMZN, ... puis appuyez sur la fonction Création de notre dataframe')
-ticker = st.text_input(' ', "AAPL", placeholder="Entrez votre ticker ... ")
+ticker = st.text_input(' ', "BTC-USD", placeholder="Entrez votre ticker ... ")
 
 
 # ##########################################################################################################
