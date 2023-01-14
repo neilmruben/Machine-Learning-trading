@@ -1,7 +1,8 @@
 # Machine-Learning-trading
 
 
-Machine learning & trading : Dashboard interactif en Python avec Streamlit
+### Machine learning & trading : Dashboard interactif en Python avec Streamlit
+
 Ce dashboard interactif permet de prédire le mouvement d’un actif (haussier / baissier) sélectionné au préalable. 
 Il permet de choisir les paramètres des features utilisés ainsi que certains paramètres avant modèlisation comme la taille de l’échantillon de test 
 et le nombre de kfold pour la Cross-Validation. Une fois la Cross Validation effectuée on retiens les 3 meilleurs modèles de classification
