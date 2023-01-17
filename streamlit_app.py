@@ -133,7 +133,7 @@ if len(ticker) != 0:  # si l'utilisateur entre une série de ticker alors l'inte
         st.write("##### Nos données (après traitement des outliers et avant normalisation) :")
         st.dataframe(data)
         st.write('##### Matrice de corrélation des actifs du portefeuille : ')
-        fig = go.Figure(data=go.Heatmap(z=data.pct_change().corr(),x=data.columns,y=data.columns,hoverongaps = False, texttemplate="%{z}"))
+        fig = go.Figure(data=go.Heatmap(z=data.corr(),x=data.columns,y=data.columns,hoverongaps = False, texttemplate="%{z}"))
         st.plotly_chart(fig)
         scoring = 'accuracy'
         st.write("##### Moyenne de nos scores de précision (std à droite) avec la cross validation :")
