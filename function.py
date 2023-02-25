@@ -238,9 +238,9 @@ def GridSearchForGBM(X_train,Y_train, num_folds, X_test, Y_test):
 
     modelGBM =GradientBoostingClassifier(max_depth=best_paramGBM["max_depth"],n_estimators=best_paramGBM["n_estimators"])
     modelGBM.fit(X_train, Y_train)
-    predictions = modelGBM.predict(X_test)
+    #predictions = modelGBM.predict(X_test)
     #df_cm = pd.DataFrame(confusion_matrix(Y_test, predictions), columns=np.unique(Y_test),
-                         index=np.unique(Y_test))
+      #                   index=np.unique(Y_test))
 
      #df_cm.index.name = 'Actual'
      #df_cm.columns.name = 'Predicted'
