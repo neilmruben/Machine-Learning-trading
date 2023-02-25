@@ -138,9 +138,9 @@ def MLfit(data, size, num_folds):
     models.append(('Logistic Regression', LogisticRegression()))
     models.append(('Linear Discrimant Analysis', LinearDiscriminantAnalysis()))
     models.append(('Decision Tree Classifier', DecisionTreeClassifier()))
-    models.append(('Support Vector Classification', SVC()))
+   # models.append(('Support Vector Classification', SVC()))
     # #Neural Network
-    models.append(('Multi-layer perceptron', MLPClassifier()))
+   # models.append(('Multi-layer perceptron', MLPClassifier()))
     # # Boosting methods
     models.append(('Gradient Boosting Classifier', GradientBoostingClassifier()))
     # # Bagging methods
