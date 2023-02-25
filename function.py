@@ -239,15 +239,15 @@ def GridSearchForGBM(X_train,Y_train, num_folds, X_test, Y_test):
     modelGBM =GradientBoostingClassifier(max_depth=best_paramGBM["max_depth"],n_estimators=best_paramGBM["n_estimators"])
     modelGBM.fit(X_train, Y_train)
     predictions = modelGBM.predict(X_test)
-    df_cm = pd.DataFrame(confusion_matrix(Y_test, predictions), columns=np.unique(Y_test),
+    #df_cm = pd.DataFrame(confusion_matrix(Y_test, predictions), columns=np.unique(Y_test),
                          index=np.unique(Y_test))
 
-    df_cm.index.name = 'Actual'
-    df_cm.columns.name = 'Predicted'
-    fig5 = plt.figure(figsize=(15, 7))
-    sns.heatmap(df_cm, cmap="Blues", annot=True, annot_kws={"size": 16})  # font sizes
-    st.write("##### Matrice de confusion GBM :")
-    st.pyplot(fig5)
+     #df_cm.index.name = 'Actual'
+     #df_cm.columns.name = 'Predicted'
+     #fig5 = plt.figure(figsize=(15, 7))
+    # sns.heatmap(df_cm, cmap="Blues", annot=True, annot_kws={"size": 16})  # font sizes
+    # st.write("##### Matrice de confusion GBM :")
+    # st.pyplot(fig5)
 
     return best_paramGBM["max_depth"], best_paramGBM["n_estimators"], modelGBM
 
