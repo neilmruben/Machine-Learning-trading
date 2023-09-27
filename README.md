@@ -29,7 +29,3 @@ $$ x' = \frac{x - x_{min}}{x_{max} - x_{min}} $$
 <img width="515" alt="image" src="https://user-images.githubusercontent.com/81652761/212499847-ff74bce7-bfc2-4a90-8ac6-ef80424d9df7.png">
 
 
-
-
-
-![_5325a22d-b2bf-40ca-9491-5f4e22d8aecd](https://github.com/neilmruben/Machine-Learning-trading/assets/81652761/185bbbbd-97cc-4a84-9cc4-7d10a10211d7)
